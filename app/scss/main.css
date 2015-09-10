@@ -1,0 +1,908 @@
+/*
+ Proxima Nova Font Familiy
+*/
+@font-face {
+  font-family: ProximaNovaBlack;
+  src: url("/fonts/proximanova/ProximaNova-Black-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Black-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Black-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Black-webfont.svg#ProximaNovaBlack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaBlackItalic;
+  src: url("/fonts/proximanova/ProximaNova-BlackIt-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-BlackIt-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-BlackIt-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-BlackIt-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-BlackIt-webfont.svg#ProximaNovaBlackItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url("/fonts/proximanova/ProximaNova-Bold-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Bold-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Bold-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Bold-webfont.svg#ProximaNovaBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaBoldItalic;
+  src: url("/fonts/proximanova/ProximaNova-BoldIt-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-BoldIt-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-BoldIt-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-BoldIt-webfont.svg#ProximaNovaBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaExtrabold;
+  src: url("/fonts/proximanova/ProximaNova-Xbold-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Xbold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Xbold-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Xbold-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Xbold-webfont.svg#ProximaNovaExtrabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaExtraboldItalic;
+  src: url("/fonts/proximanova/ProximaNova-XboldIt-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-XboldIt-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-XboldIt-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-XboldIt-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-XboldIt-webfont.svg#ProximaNovaExtraboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaRegularItalic;
+  src: url("/fonts/proximanova/ProximaNova-RegIt-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-RegIt-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-RegIt-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-RegIt-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-RegIt-webfont.svg#ProximaNovaRegularItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url("/fonts/proximanova/ProximaNova-Light-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Light-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Light-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Light-webfont.svg#ProximaNovaLight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaLightItalic;
+  src: url("/fonts/proximanova/ProximaNova-LightIt-webfontt.eot");
+  src: url("/fonts/proximanova/ProximaNova-LightIt-webfontt.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-LightIt-webfontt.woff") format("woff"), url("/fonts/proximanova/ProximaNova-LightIt-webfontt.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-LightIt-webfontt.svg#ProximaNovaLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url("/fonts/proximanova/ProximaNova-Reg-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Reg-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Reg-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Reg-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Reg-webfont.svg#ProximaNovaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url("/fonts/proximanova/ProximaNova-Sbold-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Sbold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Sbold-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Sbold-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Sbold-webfont.svg#ProximaNovaSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaSemiboldItalic;
+  src: url("/fonts/proximanova/ProximaNova-SboldIt-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-SboldIt-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-SboldIt-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-SboldIt-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-SboldIt-webfont.svg#ProximaNovaSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url("/fonts/proximanova/ProximaNova-Thin-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-Thin-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-Thin-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-Thin-webfont.svg#ProximaNovaThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaThinItalic;
+  src: url("/fonts/proximanova/ProximaNova-ThinIt-webfont.eot");
+  src: url("/fonts/proximanova/ProximaNova-ThinIt-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNova-ThinIt-webfont.woff") format("woff"), url("/fonts/proximanova/ProximaNova-ThinIt-webfont.ttf") format("truetype"), url("/fonts/proximanova/ProximaNova-ThinIt-webfont.svg#ProximaNovaThinItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+x
+
+//@font-face {
+//    font-family: 'ProximaNovaExCn-It';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-ThinIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-ThinIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-ThinIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-ThinIt.ttf')  format('truetype');
+//    font-weight: 100;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond';
+//    src: url('/fonts/proximanova/ProximaNovaCond-Bold.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-Bold.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-Bold.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-Bold.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-SemiIt';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-SemiboldIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-SemiboldIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-SemiboldIt.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Regular.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Regular.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Regular.ttf')  format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-Semi';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Semibold.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Semibold.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Semibold.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Semibold.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Light.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Light.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Light.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Light.ttf')  format('truetype');
+//    font-weight: 300;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond-Semi';
+//    src: url('/fonts/proximanova/ProximaNovaCond-Semibold.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-Semibold.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-Semibold.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-It';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-RegularIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-RegularIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-RegularIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-RegularIt.ttf')  format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond';
+//    src: url('/fonts/proximanova/ProximaNovaCond-Light.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-Light.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-Light.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-Light.ttf')  format('truetype');
+//    font-weight: 300;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond-SemiIt';
+//    src: url('/fonts/proximanova/ProximaNovaCond-SemiboldIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-SemiboldIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-SemiboldIt.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-It';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-BoldIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-BoldIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-BoldIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-BoldIt.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-It';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-BlackIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-BlackIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-BlackIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-BlackIt.ttf')  format('truetype');
+//    font-weight: 900;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Bold.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Bold.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Bold.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Bold.ttf')  format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-bldIt';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-ExtrabldIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-ExtrabldIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-ExtrabldIt.ttf')  format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-bld';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Extrabld.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Extrabld.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Extrabld.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Extrabld.ttf')  format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+
+*/
+@font-face {
+  font-family: ProximaNovaCond;
+  src: url("/fonts/proximanova/ProximaNovaCond-Regular.eot");
+  src: url("/fonts/proximanova/ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNovaCond-Regular.woff") format("woff"), url("/fonts/proximanova/ProximaNovaCond-Regular.ttf") format("truetype"), url("/fonts/proximanova/ProximaNovaCond-Regular.svg#ProximaNovaCond") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNovaCond-It;
+  src: url("/fonts/proximanova/ProximaNovaCond-RegularIt.eot");
+  src: url("/fonts/proximanova/ProximaNovaCond-RegularIt.eot?#iefix") format("embedded-opentype"), url("/fonts/proximanova/ProximaNovaCond-RegularIt.woff") format("woff"), url("/fonts/proximanova/ProximaNovaCond-RegularIt.ttf") format("truetype"), url("/fonts/proximanova/ProximaNovaCond-RegularIt.svg#ProximaNovaCond-It") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+//
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond-_1';
+//    src: url('/fonts/proximanova/ProximaNovaCond-Regular_1.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-Regular_1.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-Regular_1.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-Regular_1.ttf')  format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond-It';
+//    src: url('/fonts/proximanova/ProximaNovaCond-LightIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-LightIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-LightIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-LightIt.ttf')  format('truetype');
+//    font-weight: 300;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaCond';
+//    src: url('/fonts/proximanova/ProximaNovaCond-Black.eot');
+//    src: url('/fonts/proximanova/ProximaNovaCond-Black.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaCond-Black.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaCond-Black.ttf')  format('truetype');
+//    font-weight: 900;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Black.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Black.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Black.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Black.ttf')  format('truetype');
+//    font-weight: 900;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Thin.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-Thin.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Thin.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-Thin.ttf')  format('truetype');
+//    font-weight: 100;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'ProximaNovaExCn-It';
+//    src: url('/fonts/proximanova/ProximaNovaExCn-LightIt.eot');
+//    src: url('/fonts/proximanova/ProximaNovaExCn-LightIt.eot?#iefix') format('embedded-opentype'),
+//    url('/fonts/proximanova/ProximaNovaExCn-LightIt.woff') format('woff'),
+//    url('/fonts/proximanova/ProximaNovaExCn-LightIt.ttf')  format('truetype');
+//    font-weight: 300;
+//    font-style: normal;
+//}
+*/
+@font-face {
+  font-family: '/Management-Console-Icons';
+  src: url("/fonts/Management-Console-Icons.eot?-lx0hk8");
+  src: url("/fonts/Management-Console-Icons.eot?#iefix-lx0hk8") format("embedded-opentype"), url("/fonts/Management-Console-Icons.ttf?-lx0hk8") format("truetype"), url("/fonts/Management-Console-Icons.woff?-lx0hk8") format("woff"), url("/fonts/Management-Console-Icons.svg?-lx0hk8#Management-Console-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Management-Console-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-not_interested:before {
+  content: "\e017"; }
+
+.icon-flux capacitor:before {
+  content: "\e130"; }
+
+.icon-input:before {
+  content: "\e2a4"; }
+
+.icon-launch:before {
+  content: "\e2a9"; }
+
+.icon-note_add2:before {
+  content: "\e2b1"; }
+
+.icon-time:before {
+  content: "\e2c2"; }
+
+.icon-restore:before {
+  content: "\e2c7"; }
+
+.icon-error:before {
+  content: "\e000"; }
+
+.icon-wire error:before {
+  content: "\e001"; }
+
+.icon-warning:before {
+  content: "\e002"; }
+
+.icon-add_alert:before {
+  content: "\e003"; }
+
+.icon-av_timer:before {
+  content: "\e005"; }
+
+.icon-analytics:before {
+  content: "\e007"; }
+
+.icon-loop:before {
+  content: "\e00e"; }
+
+.icon-add list:before {
+  content: "\e01e"; }
+
+.icon-subtitles:before {
+  content: "\e02b"; }
+
+.icon-web:before {
+  content: "\e034"; }
+
+.icon-call_made:before {
+  content: "\e041"; }
+
+.icon-call_received:before {
+  content: "\e044"; }
+
+.icon-add_circle:before {
+  content: "\e06b"; }
+
+.icon-add_circle_outline:before {
+  content: "\e06c"; }
+
+.icon-edit:before {
+  content: "\e074"; }
+
+.icon-solid minus:before {
+  content: "\e080"; }
+
+.icon-wire minus:before {
+  content: "\e081"; }
+
+.icon-report:before {
+  content: "\e084"; }
+
+.icon-dash1:before {
+  content: "\e0ad"; }
+
+.icon-edit2:before {
+  content: "\e0c5"; }
+
+.icon-status:before {
+  content: "\e0e5"; }
+
+.icon-doc:before {
+  content: "\e0e7"; }
+
+.icon-file_download:before {
+  content: "\e0ff"; }
+
+.icon-file_upload:before {
+  content: "\e100"; }
+
+.icon-smartphone:before {
+  content: "\e127"; }
+
+.icon-tablet:before {
+  content: "\e12a"; }
+
+.icon-adjust:before {
+  content: "\e133"; }
+
+.icon-flag:before {
+  content: "\e135"; }
+
+.icon-wire add:before {
+  content: "\e14f"; }
+
+.icon-dash dot:before {
+  content: "\e176"; }
+
+.icon-alt switch on:before {
+  content: "\e183"; }
+
+.icon-alt switch off:before {
+  content: "\e184"; }
+
+.icon-navigate_before:before {
+  content: "\e19a"; }
+
+.icon-navigate_next:before {
+  content: "\e19b"; }
+
+.icon-visible:before {
+  content: "\e1a8"; }
+
+.icon-wb_cloudy:before {
+  content: "\e1be"; }
+
+.icon-layers:before {
+  content: "\e1d3"; }
+
+.icon-local_grocery_store:before {
+  content: "\e1df"; }
+
+.icon-local_hospital:before {
+  content: "\e1e0"; }
+
+.icon-arrow_drop_down_circle:before {
+  content: "\e202"; }
+
+.icon-cancel:before {
+  content: "\e205"; }
+
+.icon-check:before {
+  content: "\e206"; }
+
+.icon-chevron_left:before {
+  content: "\e207"; }
+
+.icon-chevron_right:before {
+  content: "\e208"; }
+
+.icon-close:before {
+  content: "\e209"; }
+
+.icon-expand_less:before {
+  content: "\e20a"; }
+
+.icon-expand_more:before {
+  content: "\e20b"; }
+
+.icon-menu:before {
+  content: "\e20e"; }
+
+.icon-more hor:before {
+  content: "\e20f"; }
+
+.icon-more:before {
+  content: "\e210"; }
+
+.icon-notifications:before {
+  content: "\e24a"; }
+
+.icon-notifications_none:before {
+  content: "\e24b"; }
+
+.icon-people:before {
+  content: "\e251"; }
+
+.icon-user:before {
+  content: "\e253"; }
+
+.icon-user-add:before {
+  content: "\e254"; }
+
+.icon-poll:before {
+  content: "\e257"; }
+
+.icon-global:before {
+  content: "\e258"; }
+
+.icon-check_box:before {
+  content: "\e25c"; }
+
+.icon-check_box_outline_blank:before {
+  content: "\e25d"; }
+
+.icon-favorite:before {
+  content: "\e260"; }
+
+.icon-assessment:before {
+  content: "\e271"; }
+
+.icon-build:before {
+  content: "\e27e"; }
+
+.icon-check_circle:before {
+  content: "\e281"; }
+
+.icon-dashboard:before {
+  content: "\e286"; }
+
+.icon-delete:before {
+  content: "\e287"; }
+
+.icon-done:before {
+  content: "\e28a"; }
+
+.icon-done_all:before {
+  content: "\e28b"; }
+
+.icon-exit_to_app:before {
+  content: "\e28d"; }
+
+.icon-grade:before {
+  content: "\e299"; }
+
+.icon-help:before {
+  content: "\e29b"; }
+
+.icon-highlight_remove:before {
+  content: "\e29c"; }
+
+.icon-home:before {
+  content: "\e29e"; }
+
+.icon-info:before {
+  content: "\e2a2"; }
+
+.icon-info_outline:before {
+  content: "\e2a3"; }
+
+.icon-note_add:before {
+  content: "\e2b0"; }
+
+.icon-report_problem:before {
+  content: "\e2c6"; }
+
+.icon-search:before {
+  content: "\e2ca"; }
+
+.icon-settings:before {
+  content: "\e2cb"; }
+
+.icon-settings_backup_restore:before {
+  content: "\e2cd"; }
+
+.icon-stars:before {
+  content: "\e2e2"; }
+
+.icon-supervisor_account:before {
+  content: "\e2e5"; }
+
+.icon-swap_vertical_circle:before {
+  content: "\e2e8"; }
+
+.icon-decline:before {
+  content: "\e2ed"; }
+
+.icon-approve:before {
+  content: "\e2ee"; }
+
+.icon-visibility:before {
+  content: "\e306"; }
+
+.icon-visibility_off:before {
+  content: "\e307"; }
+
+.icon-research:before {
+  content: "\e30c"; }
+
+.icon-help_outline:before {
+  content: "\e30f"; }
+
+.icon-play_for_work:before {
+  content: "\e317"; }
+
+.swatch {
+  width: 50px;
+  height: 50px; }
+
+.iconGray {
+  background-color: #949494; }
+
+.colorPrimary {
+  background-color: #50783E; }
+
+.colorSecondary {
+  background-color: #77BE43; }
+
+.colorTertiary {
+  background-color: #808080; }
+
+.disabledBackground {
+  background-color: #DDDDDD; }
+
+.colorWarning {
+  background-color: #EB5D5D; }
+
+.left {
+  float: left; }
+
+.no-border {
+  border: none; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  min-height: 100%; }
+
+body {
+  background: url(../images/MC-Shell-UI-mk2--menu.png) no-repeat left top;
+  font-family: "ProximaNovaSemibold"; }
+
+.clear {
+  clear: both; }
+
+.header-global {
+  height: 50px;
+  color: #949494;
+  font-size: 12px; }
+  .header-global .left {
+    height: 50px; }
+  .header-global .advanced {
+    color: #949494;
+    margin-right: 20px;
+    text-decoration: none; }
+  .header-global .logo--insite {
+    padding: 10px;
+    width: 50px; }
+  .header-global .border-right {
+    border-right: 1px solid #949494; }
+  .header-global .select--clear select {
+    height: 50px;
+    margin-left: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "ProximaNovaCond"; }
+  .header-global input.text-clear {
+    font-family: "ProximaNovaCond";
+    font-size: 14px;
+    border-bottom: 1px solid #949494;
+    padding-bottom: 4px;
+    margin: 17px 18px 11px 23px;
+    width: 404px;
+    outline: none;
+    background: url(/images/elements/icon-search-white.png) no-repeat right top; }
+    .header-global input.text-clear.placeholder {
+      font-family: "ProximaNovaCond-It";
+      line-height: 1.2em; }
+    .header-global input.text-clear:-moz-placeholder {
+      font-family: "ProximaNovaCond-It";
+      line-height: 1.2em; }
+    .header-global input.text-clear::-moz-placeholder {
+      font-family: "ProximaNovaCond-It";
+      line-height: 1.2em; }
+    .header-global input.text-clear::-webkit-input-placeholder {
+      font-family: "ProximaNovaCond-It";
+      line-height: 1.2em; }
+  .header-global .tasks {
+    position: relative;
+    padding: 18px;
+    display: block;
+    height: 50px;
+    opacity: .5; }
+    .header-global .tasks .icon-build {
+      font-size: 16px;
+      color: cyan; }
+    .header-global .tasks .task-count {
+      color: cyan;
+      font-size: 14PX;
+      position: absolute;
+      top: 6px;
+      right: 13px; }
+  .header-global .user {
+    position: relative;
+    width: 290px; }
+    .header-global .user .icon-user,
+    .header-global .user .icon-expand_more,
+    .header-global .user .icon-exit_to_app {
+      padding: 14px 11px;
+      display: block;
+      font-size: 19px;
+      color: rgba(0, 255, 255, 0.48);
+      float: left;
+      background-color: rgba(0, 255, 255, 0.47); }
+    .header-global .user .icon-user {
+      position: absolute; }
+    .header-global .user ul.user-menu {
+      margin: 0;
+      padding: 19px 13px 0 40px;
+      float: left;
+      list-style-type: none;
+      height: 50px; }
+      .header-global .user ul.user-menu ul {
+        position: absolute;
+        left: 0;
+        background-color: rgba(255, 0, 0, 0.4);
+        width: 100%;
+        top: 100%;
+        margin: 0;
+        padding: 7px 0; }
+        .header-global .user ul.user-menu ul li {
+          list-style-type: none;
+          list-style-type: none;
+          padding: 7px 40px; }
+          .header-global .user ul.user-menu ul li:hover {
+            background: cyan; }
+
+mc-sidebar-global {
+  height: 100%;
+  opacity: .3; }
+  mc-sidebar-global .mc-sidebar-global-container {
+    width: 50px;
+    height: 100%;
+    background: black; }
+  mc-sidebar-global i {
+    color: #949494; }
+
+.global-sidebar {
+  float: left;
+  background: rgba(0, 255, 255, 0.27);
+  padding: 10px;
+  width: 50px;
+  -webkit-transition: width .5s; }
+  .global-sidebar .icon-menu,
+  .global-sidebar .icon-close {
+    color: white;
+    font-size: 30px; }
+  .global-sidebar .icon-close {
+    display: none; }
+  .global-sidebar .global-sidebar-contents {
+    left: -999999px;
+    position: absolute;
+    padding: 15px; }
+
+.sidebar-open .global-sidebar {
+  width: 175px; }
+  .sidebar-open .global-sidebar .icon-menu {
+    display: none; }
+  .sidebar-open .global-sidebar .icon-close {
+    display: block; }
+  .sidebar-open .global-sidebar .global-sidebar-contents {
+    left: 0px; }
+
+.global-content-area {
+  background: rgba(147, 255, 154, 0.32);
+  float: left;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  width: calc(100% - 50px); }
+
+.sidebar-open .global-content-area {
+  width: calc(100% - 175px); }
+
+mc-shell-message div.mc-shell-message {
+  color: white;
+  padding: 7px 20px;
+  font-size: 13px; }
+  mc-shell-message div.mc-shell-message__message {
+    display: inline-block; }
+  mc-shell-message div.mc-shell-message .mc-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block; }
+  mc-shell-message div.mc-shell-message .shell-message-content {
+    position: relative;
+    top: -7px; }
+  mc-shell-message div.mc-shell-message .shell-message-click {
+    position: relative;
+    top: -7px; }
+  mc-shell-message div.mc-shell-message mc-button {
+    display: inline-block; }
+  mc-shell-message div.mc-shell-message.message {
+    background-color: #0377b0; }
+  mc-shell-message div.mc-shell-message.success {
+    background-color: #77BE43; }
+  mc-shell-message div.mc-shell-message.error {
+    background-color: #b0030f; }
+
+.select--clear {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  overflow: hidden; }
+  .select--clear, .select--clear > * {
+    cursor: pointer; }
+  .select--clear select {
+    background: none;
+    border: none;
+    outline: 0;
+    width: 120%;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
+    appearance: none; }
+    .select--clear select::-ms-expand {
+      display: none; }
+
+.select--clear--image-gray {
+  background: url(/images/elements/arrow-down-gray.png) no-repeat right; }
+.select--clear--image-green {
+  background: url(/images/elements/arrow-down-green.png) no-repeat right; }
+
+.select--clear--noimage {
+  background: transparent; }
+  .select--clear--noimage:after {
+    content: '>';
+    width: 0;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -9px;
+    border-width: 6px 4px;
+    pointer-events: none; }
+
+input.text-clear {
+  background: none;
+  border: none; }
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: dodgerblue;
+  margin: 0 5px 5px; }
+  .btn:hover {
+    opacity: 0.7; }
+  .btn--primary {
+    background-color: #50783E; }
+  .btn--secondary {
+    background-color: #77BE43; }
+  .btn--tertiary {
+    background-color: #808080; }
+  .btn--disabled {
+    background-color: #DDDDDD;
+    color: #A5A5A5;
+    cursor: inherit;
+    outline: none; }
+    .btn--disabled:hover {
+      opacity: 1; }
+  .btn--warning {
+    background-color: #EB5D5D; }
+  .btn--cancel {
+    color: #eb5c66;
+    background: #f4f4f4; }
+  .btn--slim {
+    padding: 4px 25px; }
+  .btn--clear {
+    background-color: transparent !important; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,127 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Management Console</title>
+    <meta name="description" content="Management Console">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="favicon" href="favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="scss/vendor.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="js/vendor/jquery-1.11.3.js"></script>
+    <script src="bower_compontents/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="elements/elements.html">
+</head>
+
+<body class="sidebar-open">
+
+<div class="header-global">
+    <div class="left">
+        <a href="#"><img src="images/logo-insite.png" class="logo--insite"></a>
+    </div>
+
+    <div class="left border-right">
+        <mc-selectwrapper select-style="clear" variation="image-green" class="left">
+            <select class="uppercase">
+                <option>Customers</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+                <option>Option 6</option>
+            </select>
+        </mc-selectwrapper>
+
+        <input type="text" class="text-clear" placeholder="Enter keyword">
+        <a href="#" class="advanced">Advanced</a>
+    </div>
+
+    <div class="left border-right tasks">
+        <mc-icon icon="build"></mc-icon>
+        <span class="task-count">9</span>
+    </div>
+
+    <div class="left user">
+        <!--<span class="icon-user"></span>-->
+        <mc-icon icon="user"></mc-icon>
+
+        <ul class="user-menu">
+            <li>hfarnsworth <span class="role">(Administrator)</span>
+                <ul class="user-sub-menu">
+                    <li>XYZ 1</li>
+                    <li>XYZ 2</li>
+                    <li>XYZ 3</li>
+                </ul>
+            </li>
+        </ul>
+
+        <mc-icon icon="expand_more"></mc-icon>
+        <mc-icon icon="exit_to_app"></mc-icon>
+    </div>
+</div>
+<!-- // end global header-->
+
+<!-- global sidebar-->
+<div class="global-sidebar">
+    <mc-icon icon="menu"></mc-icon>
+    <mc-icon icon="close"></mc-icon>
+    <!--global sidebar contents-->
+    <div class="global-sidebar-contents">
+        <mc-icon icon="user"></mc-icon>
+        <mc-icon icon="user"></mc-icon>
+    </div>
+    <!-- // end global sidebar contents-->
+</div>
+<!-- // end global sidebar-->
+
+<!--content area-->
+<div class="global-content-area">
+
+    <!-- Banner Examples -->
+    <mc-shell-message type="message">Hello. Something happened.</mc-shell-message>
+    <mc-shell-message type="success">
+        <div class="mc-shell-message__message">
+            Splendid! Your thing updated successfully.
+        </div>
+        <mc-button>
+            Rocksone Oneceler.
+        </mc-button>
+    </mc-shell-message>
+    <mc-shell-message type="error" click-type="link" click="http://www.google.com" target="_blank">Drat! Your action
+        resulted in an error!
+    </mc-shell-message>
+    <mc-shell-message
+            type="message"
+            click-type="js"
+            click="javascript:alert('Action Taken!');
+    ">Your results can be viewed here.
+    </mc-shell-message>
+
+    <!-- Button Examples -->
+    <mc-button>Default Button</mc-button>
+    <mc-button icon="exit_to_app" classes="btn--primary">Button Primary</mc-button>
+    <mc-button icon="restore" classes="btn--secondary">Button Secondary</mc-button>
+    <mc-button icon="user" classes="btn--tertiary">Button Tertiary</mc-button>
+    <mc-button icon="user" classes="btn--cancel">Button Cancel</mc-button>
+    <mc-button icon="user" link="http://www.googlasdfe.com">Button Link</mc-button>
+    <mc-button
+            icon="user"
+            link="http://www.google.com"
+            target="_blank"
+            >Button Link and Target
+    </mc-button>
+    <mc-button icon="cancel" click="javascript:alert('hey ya!');">Action Button</mc-button>
+    <mc-button icon="restore" classes="btn--clear" click="javascript:alert('Clear Button!');">Button Clear</mc-button>
+    <mc-button
+            icon="edit"
+            click="javascript:alert('Logged Out!');"
+            classes="btn--tertiary btn--no-text"
+            ></mc-button>
+</div>
+<!--// end content area-->
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+// Proxima Nova Regular
+$base: 'ProximaNova';
+$baseThin: 'ProximaNovaThin';
+$baseLight: 'ProximaNovaLight';
+$baseSemibold: 'ProximaNovaSemibold';
+$baseBold:  'ProximaNovaBold';
+$baseBlack: 'ProximaNovaBlack';
+$baseItalic: 'ProximaNovaRegularItalic';
+$baseExtrabold: 'ProximaNovaExtrabold';
+
+$baseThinItalic: 'ProximaNovaThinItalic';
+$baseLightItalic: 'ProximaNovaLightItalic';
+$baseSemiboldItalic: 'ProximaNovaSemiboldItalic';
+$baseBoldItalic: 'ProximaNovaBoldItalic';
+$baseExtraboldItalic: 'ProximaNovaExtraboldItalic';
+$baseBlackItalic: 'ProximaNovaBlackItalic';
+
+// Proxima Nova Condensed
+
+
+$baseCond: 'ProximaNovaCond';
+$baseCondItalic: 'ProximaNovaCond-It';
+
+/// Primary Font Family
+/// @group Fonts
+$fontPrimary: "ProximaNova", "Arial", sans-serif;
+
+/// Secondary Font Family
+/// @group Fonts
+$fontSecondary: "ProximaNovaCond", "ProximaNova", "Arial", sans-serif;;
+
+/// Management Console Font
+/// @group Fonts
+$mcIcons: 'Management-Console-Icons';

@@ -1,0 +1,110 @@
+.header-global {
+    height: 50px;
+    color: $iconGray;
+    font-size: 12px;
+    .left {
+        height: 50px;
+    }
+    .advanced {
+        color: $iconGray;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+     .logo--insite {
+         padding: 10px;
+         width: 50px;
+     }
+
+    .border-right {
+        border-right: 1px solid $iconGray;
+    }
+
+    .select--clear {
+        select {
+            height: 50px;
+            margin-left: 17px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: $baseCond;
+        }
+    }
+    input.text-clear {
+        font-family: $baseCond;
+        font-size: 14px;
+        border-bottom: 1px solid $iconGray;
+        padding-bottom: 4px;
+        margin: 17px 18px 11px 23px;
+        width: 404px;
+        outline: none;
+        background: url(/images/elements/icon-search-white.png) no-repeat right top;
+        @include placeholder {
+            font-family: $baseCondItalic;
+            line-height: 1.2em;
+        }
+
+    }
+    .tasks {
+        position: relative;
+        padding: 18px;
+        display: block;
+        height: 50px;
+        .icon-build {
+            font-size: 16px;
+            color: cyan;
+        }
+        .task-count {
+            color: cyan;
+            font-size: 14PX;
+            position: absolute;
+            top: 6px;
+            right: 13px;
+        }
+        opacity: .5;
+    }
+
+    // /////////
+    // user tab
+    // /////////
+    .user {
+        position: relative;
+        width: 290px;
+        .icon-user,
+        .icon-expand_more,
+        .icon-exit_to_app {
+            padding: 14px 11px;
+            display: block;
+            font-size: 19px;
+            color: rgba(0, 255, 255, 0.48);
+            float: left;
+            background-color: rgba(0, 255, 255, 0.47);
+        }
+        .icon-user {
+            position: absolute;
+        }
+        ul.user-menu { // obviously needs to be more specifc.
+            margin: 0;
+            padding: 19px 13px 0 40px;
+            float: left;
+            list-style-type: none;
+            height: 50px;
+            ul { // user menu dropdown
+                position: absolute;
+                left: 0;
+                background-color: rgba(255, 0, 0, 0.4);
+                width: 100%;
+                top: 100%;
+                margin: 0;
+                padding: 7px 0;
+                li {
+                    list-style-type: none;
+                    list-style-type: none;
+                    padding: 7px 40px;
+                    &:hover {
+                        background: cyan;
+                    }
+                }
+            }
+        }
+    }
+ } // end header global

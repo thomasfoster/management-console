@@ -1,0 +1,60 @@
+// Main Site Buttons
+//
+// Buttons can and should be clicked
+//
+// Markup:
+// <mc-button classes="{{modifier_class}}" icon="user">{{modifier_class}}</mc-button>
+//
+// :hover - highlight the button when hovered
+// .btn--primary - primary button
+// .btn--secondary - secondary button
+// .btn--tertiary - tertiary button
+// .btn--disabled - disabled button
+// .btn--warning - warning button
+// .btn--slim - shorter button
+//
+//
+//
+// Style guide: 1
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    margin: 0 5px 5px;
+    &:hover {
+        opacity: 0.7;
+    }
+    &--primary {
+        background-color: $colorPrimary;
+    }
+    &--secondary {
+        background-color: $colorSecondary;
+    }
+    &--tertiary {
+        background-color: $colorTertiary;
+    }
+    &--disabled {
+        background-color: $disabledBackground;
+        color: $disabledText;
+        cursor: inherit;
+        outline: none;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &--warning {
+        background-color: $colorWarning;
+    }
+    &--cancel {
+        color: $softRed;
+        background: #f4f4f4;
+    }
+    &--slim {
+        padding: 4px 25px;
+    }
+    &--clear {
+        background-color: transparent !important;
+    }
+}

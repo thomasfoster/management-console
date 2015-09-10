@@ -1,0 +1,10 @@
+* {box-sizing: border-box;}
+body,
+html {
+    min-height: 100%;
+}
+body {
+    background: url(../images/MC-Shell-UI-mk2--menu.png) no-repeat left top;
+    //background: black;
+    font-family: $baseSemibold;
+}

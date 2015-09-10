@@ -1,0 +1,59 @@
+mc-sidebar-global {
+    height: 100%;
+    opacity: .3;
+    .mc-sidebar-global-container {
+        width: 50px;
+        height: 100%;
+        background: black;
+    }
+    i {
+        color: $iconGray;
+    }
+}
+
+.global-sidebar {
+    float: left;
+    background: rgba(0, 255, 255, 0.27);
+    padding: 10px;
+    width: 50px;
+    //position: absolute;
+    //top: 50px;
+    //bottom: 0;
+    //left: 0;
+    -webkit-transition: width .5s;
+    .icon-menu,
+    .icon-close {
+        color: white;
+        font-size: 30px;
+    }
+    .icon-close {
+        display: none;
+    }
+    // sidebar contents
+    .global-sidebar-contents {
+        left:-999999px;
+        position: absolute;
+        padding: 15px;
+    }
+}
+
+.sidebar-open {
+    .global-sidebar {
+        width: 175px;
+        .icon-menu {
+            display: none;
+        }
+        .icon-close {
+            display: block;
+        }
+        // sidebar contents
+        .global-sidebar-contents {
+            left:0px;
+        }
+
+        // global sidebar main menu
+        .global-sidebar-menu {
+
+        }
+    }
+}

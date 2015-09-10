@@ -1,0 +1,15 @@
+.global-content-area {
+    background: rgba(147, 255, 154, 0.32);
+    float: left;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+    width: calc(100% - 50px);
+}
+
+
+// when sidebar is open
+.sidebar-open {
+    .global-content-area {
+        width: calc(100% - 175px)
+    }
+}

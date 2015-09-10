@@ -1,0 +1,91 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+<!-- MC Icon is used -->
+<link rel="import" href="../mc-icon/mc-icon.html">
+<link rel="import" href="../mc-button/mc-button.html">
+
+<dom-module id="mc-shell-message">
+  <style>
+    :host {
+      display: block;
+    }
+
+  </style>
+  <template>
+    <div class$="[[type]]">
+      <mc-icon icon$="[[_typeIcon(type)]]"></mc-icon>
+      <span class="shell-message-content">
+        <content select=".mc-shell-message__message"></content>
+
+      </span>
+      <span class="shell-message-click">
+        <content select="mc-button"></content>
+      </span>
+    </div>
+  </template>
+</dom-module>
+<script>
+(function() {
+  Polymer({
+    is: 'mc-shell-message',
+
+    properties: {
+      type: {
+        type: String,
+        value: 'message'
+      },
+      clickType: {
+        type: String,
+        value: 'js'
+      }
+    }, // end properties
+
+    ready: function(){
+      if (this.clickType === 'js') {
+        // alert('rockson~');
+      } else if (this.clickType === 'link') {
+        // alert('links');
+      }
+    },
+
+    _typeIcon: function(type){
+      switch(type){
+        case 'message':
+          return 'info';
+          break;
+        case 'success':
+          return 'check_circle';
+          break;
+        case 'error':
+          return 'report_problem'
+          break;
+        default:
+          return 'user';
+      }
+    }
+  });
+})();
+</script>
+<!--
+  Example:
+  <mc-shell-message type="message" click-type="js" click="javascript:alert('Action Taken!');">Drat! Your action resulted in an error!</mc-shell-message>
+
+-->
+
+<!--
+
+// question: does this need to support ng-click?
+
+Variables:
+  type -> allowed: message, success, error
+  click-type -> allowed: link, js
+-->

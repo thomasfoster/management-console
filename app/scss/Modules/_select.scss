@@ -1,0 +1,89 @@
+// Select Lists
+//
+// A clear select list that can have an image or character added for the caret.
+//
+// Markup:
+// <div class="{{modifier_class}}">
+//      <select>
+//          <option>Option</option>
+//          <option>Option 2</option>
+//          <option>Option 3</option>
+//      </select>
+// </div>
+//
+// .select-clear - The container that goes around the select list.
+//
+// Style guide 2
+
+.select--clear {
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    overflow: hidden;
+
+    &, > * {
+        cursor: pointer;
+    }
+
+    select {
+        background: none;
+        border: none;
+        outline: 0;
+        width: 120%;
+
+        -webkit-user-select: none;
+        -moz-user-select: -moz-none;
+        -ms-user-select: none;
+        user-select: none;
+
+        -webkit-appearance: none;
+        -moz-appearance: radio-container;
+        appearance: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+}
+
+// Select Lists - Clear Styles
+//
+// A clear select list that can have an image or character added for the caret.
+//
+// Markup:
+// <div class="select-clear {{modifier_class}}">
+//     <select>
+//         <option>Option</option>
+//         <option>Option 1</option>
+//         <option>Option 2</option>
+//     </select>
+// </div>
+//
+// .select-clear-image-gray - Gray down arrow.
+// .select-clear-image-green - Green down arrow.
+// .select-clear-noimage - This can be used and extended to show characters or icons.
+//
+// Style guide: 2.1
+
+.select--clear--image {
+    &-gray {
+        background: url(/images/elements/arrow-down-gray.png) no-repeat right;
+    }
+    &-green {
+        background: url(/images/elements/arrow-down-green.png) no-repeat right;
+    }
+}
+
+.select--clear--noimage{
+    background: transparent;
+    &:after {
+        content: '>';
+        width: 0;
+        position: absolute;
+        right: 11px;
+        top: 50%;
+        margin-top: -9px;
+        border-width: 6px 4px;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,72 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+
+<dom-module id="mc-selectwrapper">
+  <style>
+    :host {
+      display: block;
+    }
+  </style>
+  <template>
+    <link href="mc-selectwrapper.css" rel="stylesheet" />
+    <div class$="[[_computeStyle(selectStyle, variation)]]">
+      <content></content>
+    </div>
+  </template>
+</dom-module>
+<script>
+  (function() {
+    Polymer({
+      is: 'mc-selectwrapper',
+
+      properties: {
+        selectStyle: {
+          type: String,
+          value: null
+        },
+        variation: {
+          type: String,
+          value: null
+        }
+      }, // end properties
+
+      _computeStyle: function(selectStyle, variation){
+        var computedStyle = '';
+        if (selectStyle) {
+          computedStyle += 'select--' + selectStyle;
+        }
+        if (variation) {
+          computedStyle += ' select--' + selectStyle + '--' + variation;
+        }
+        return computedStyle;
+      }
+
+    });
+  })();
+</script>
+
+<!--
+Example:
+<mc-selectwrapper select-style="clear" variation="image-green" class="left">
+  <select class="uppercase">
+    <option>Customers</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+    <option>Option 5</option>
+    <option>Option 6</option>
+  </select>
+</mc-selectwrapper>
+
+SelectStyle is the style of select list, ex: select--clear
+variation is what style you want the the dropdown to have further, example green-arrow, or gray-arrow, will be converted into select--green-arrow, or select--gray-arrow
+-->

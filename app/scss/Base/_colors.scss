@@ -1,0 +1,43 @@
+/// # Colors Here
+/// @group colors
+$iconGray: #949494;
+/// Primary color
+/// @group colors
+$colorPrimary: #50783E;
+/// Secondary Color
+/// @group colors
+$colorSecondary: #77BE43;
+/// Tertiary Color
+/// @group colors
+$colorTertiary:#808080;
+/// Disabled Color
+/// @group colors
+$disabledBackground:#DDDDDD;
+/// Disabled Text
+/// @group colors
+$disabledText: #A5A5A5;
+/// Warning Color
+/// @group colors
+$colorWarning:#EB5D5D;
+/// Soft Red
+/// @group colors
+$softRed: #eb5c66;
+/// Message Blue
+/// @group colors
+$messageBlue: #0377b0;
+/// Error Red
+/// @group colors
+$errorRed: #b0030f;
+@mixin bgColor ($color) {
+    background-color: $color;
+}
+
+
+// These are for the pattern library, to display the swatches.
+.swatch {width:50px; height:50px;}
+.iconGray { @include bgColor($iconGray);}
+.colorPrimary {@include bgColor($colorPrimary);}
+.colorSecondary {@include bgColor($colorSecondary);}
+.colorTertiary {@include bgColor($colorTertiary);}
+.disabledBackground {@include bgColor($disabledBackground);}
+.colorWarning {@include bgColor($colorWarning);}

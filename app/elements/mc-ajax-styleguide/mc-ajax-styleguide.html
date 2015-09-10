@@ -1,0 +1,114 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+
+<dom-module id="mc-ajax-styleguide">
+
+  <template>
+
+    <style>
+      #tempDelete {
+        display: none;
+      }
+      .ajax-container {
+        border-bottom: 1px solid #DDDDDD;
+        padding-bottom:15px;
+        margin-bottom: 20px;
+      }
+
+
+    </style>
+
+    <span>[[_custId()]]</span>
+    <div id$="[[custId]]" class="ajax-container" data-action$="[[_ajaxRequest(custId, targetElement, targetPage)]]">
+      Loading...
+      <div id="tempDelete"></div>
+    </div>
+
+    </div>
+  </template>
+</dom-module>
+<script>
+  (function() {
+    Polymer({
+      is: 'mc-ajax-styleguide',
+
+      properties: {
+        custId: {
+          type: String,
+          value: null
+        },
+
+        // a selector that will be used to find an element on the selected page
+        targetElement: {
+          type: String,
+          value: null
+        },
+        targetPage : {
+          type: String,
+          value: null
+        }
+      },
+
+
+      //gives a custom id to use in this instance of the polymer element
+      _custId : function(){
+        var cust_Id = 'ajax-',
+          randomValue = Math.floor((Math.random() * 9000) + 1);
+
+        cust_Id = cust_Id + randomValue;
+        this.custId =  cust_Id;
+      },
+
+      // process ajax request fot this element // should be targetElement, targetPage
+      _ajaxRequest : function(custId, targetElement, targetPage) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+
+          // on success
+          if (xhr.readyState == 4) {
+
+            // put contents into
+            var tempDelete = document.getElementById('tempDelete'),
+              custIdElement = document.getElementById(custId);
+
+            tempDelete.innerHTML = xhr.responseText;
+
+            if (targetElement) {
+              var selectedText = tempDelete.querySelector(targetElement);
+
+              custIdElement.innerHTML = selectedText.outerHTML;
+              console.log('get this element is here')
+            } else {
+              custIdElement.innerHTML = tempDelete.innerHTML;
+              console.log('get this element is not here')
+            }
+
+
+
+          }
+        }
+        xhr.open('GET', targetPage, true);
+        xhr.send(null);
+
+
+      }
+
+
+
+
+    });
+
+    // running function
+
+  })();
+</script>
+
